@@ -1,8 +1,15 @@
-# React + Vite
+## Approach
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-   **Componentization:** Designed components with reusability in mind, breaking down the Figma design into modular units.
 
-Currently, two official plugins are available:
+-   **Task Segmentation:** Tackled the challenge by focusing on specific tasks, such as developing a single card component first, before scaling to the entire design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **React Hooks:** Leveraged React hooks (e.g., useState) to efficiently manage the application state.
+
+-   **Dynamic Components:** Utilized props to make components dynamic and reusable, ensuring flexibility in adapting to different requirements.
+
+-   **Precision from Figma to Code:** Implemented design details with precision, calculating margins and padding to accurately translate the Figma design into React and Tailwind code.
+
+## Conclusion
+
+This approach balances efficient development, code maintainability, and design accuracy, resulting in functional, adaptable code aligned with the original design. This readme documents the thoughtful considerations made throughout the development process.
