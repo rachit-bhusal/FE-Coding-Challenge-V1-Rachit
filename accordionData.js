@@ -1,8 +1,8 @@
-import FifthAccordionIcon from './components/Icons/AccordionIcons/FifthAccordionIcon.jsx';
-import FirstAccordionIcon from './components/Icons/AccordionIcons/FirstAccordionIcon.jsx';
-import ForthAccordionIcon from './components/Icons/AccordionIcons/ForthAccordionIcon.jsx';
-import SecondAccordionIcon from './components/Icons/AccordionIcons/SecondAccordionIcon.jsx';
-import ThirdAccordionIcon from './components/Icons/AccordionIcons/ThirdAccordionIcon.jsx';
+import FifthAccordionIcon from './src/components/Icons/AccordionIcons/FifthAccordionIcon.jsx';
+import FirstAccordionIcon from './src/components/Icons/AccordionIcons/FirstAccordionIcon.jsx';
+import FourthAccordionIcon from './src/components/Icons/AccordionIcons/FourthAccordionIcon.jsx';
+import SecondAccordionIcon from './src/components/Icons/AccordionIcons/SecondAccordionIcon.jsx';
+import ThirdAccordionIcon from './src/components/Icons/AccordionIcons/ThirdAccordionIcon.jsx';
 
 const accordionData = [
 	{
@@ -26,7 +26,7 @@ const accordionData = [
 	{
 		id: '4',
 		title: 'Accordion title 4',
-		icon: ForthAccordionIcon(),
+		icon: FourthAccordionIcon(),
 		description: 'Lorem ipsum dolor sit amet',
 	},
 	{

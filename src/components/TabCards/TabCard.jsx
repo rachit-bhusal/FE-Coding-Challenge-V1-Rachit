@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import accordionData from '../../accordionData.js';
+import accordionData from '../../../accordionData.js';
 import Modal from '../Modal/Modal.jsx';
 import Accordion from './Accordion';
 import TabButton from './TabButton.jsx';

@@ -1,4 +1,4 @@
-import Button from './Button';
+import CardButton from './CardButton';
 
 const Card = ({ title, icon, description, buttonLabel, id, setActiveTab }) => {
 	const handleClick = () => {
@@ -17,7 +17,7 @@ const Card = ({ title, icon, description, buttonLabel, id, setActiveTab }) => {
 				</div>
 				<p className='text-base font-medium'>{description}</p>
 			</div>
-			<Button label={buttonLabel} />
+			<CardButton label={buttonLabel} />
 		</div>
 	);
 };

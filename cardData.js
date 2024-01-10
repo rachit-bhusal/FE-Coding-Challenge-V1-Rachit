@@ -1,7 +1,7 @@
-import FirstCardIcon from './components/Icons/CardIcons/FirstCardIcon.jsx';
-import FourthCardIcon from './components/Icons/CardIcons/FourthCardIcon.jsx';
-import SecondCardIcon from './components/Icons/CardIcons/SecondCardIcon.jsx';
-import ThirdCardIcon from './components/Icons/CardIcons/ThirdCardIcon.jsx';
+import FirstCardIcon from './src/components/Icons/CardIcons/FirstCardIcon.jsx';
+import FourthCardIcon from './src/components/Icons/CardIcons/FourthCardIcon.jsx';
+import SecondCardIcon from './src/components/Icons/CardIcons/SecondCardIcon.jsx';
+import ThirdCardIcon from './src/components/Icons/CardIcons/ThirdCardIcon.jsx';
 
 const cardData = [
 	{
