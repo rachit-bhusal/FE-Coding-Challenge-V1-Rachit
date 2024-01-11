@@ -11,17 +11,22 @@ const TabCard = ({ title, description }) => {
 		setShowMyModal(false);
 	};
 	return (
-		<div className='lg:flex lg:flex-row lg:justify-between lg:gap-16 bg-[#FFE58C] lg:rounded-[2.5rem] rounded-3xl px-16 py-14 lg:w-full'>
-			<div>
-				<p className='pb-6 text-5xl font-semibold xl:text-balance text-wrap'>{title}</p>
-				<p className='pb-12 text-2xl font-normal text-wrap'>{description}</p>
-				<TabButton label='Discover Product' setShowMyModal={setShowMyModal} />
+		<div className='flex flex-col lg:flex-row lg:justify-between gap-10 lg:gap-16 bg-[#FFE58C] lg:rounded-[2.5rem] rounded-3xl px-16 py-14 lg:w-full'>
+			<div className='flex flex-col gap-6 lg:gap-0 lg:basis-2/4'>
+				<p className='text-3xl font-semibold lg:pb-6 lg:text-5xl xl:text-balance text-wrap'>{title}</p>
+				<p className='text-xl font-normal lg:pb-12 lg:text-2xl max-w-64 lg:max-w-full'>{description}</p>
+				<div className='hidden lg:block'>
+					<TabButton label='Discover Product' setShowMyModal={setShowMyModal} />
+				</div>
 				<Modal onClose={dontShowMyModal} visible={showMyModal} />
 			</div>
-			<div>
+			<div className='flex flex-col lg:basis-2/4'>
 				{accordionData.map((item) => {
 					return <Accordion key={item.id} title={item.title} icon={item.icon} description={item.description} />;
 				})}
+			</div>
+			<div className='block lg:hidden'>
+				<TabButton label='Discover Product' setShowMyModal={setShowMyModal} />
 			</div>
 		</div>
 	);

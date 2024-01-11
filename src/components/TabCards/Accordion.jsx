@@ -3,10 +3,14 @@ import DownArrowAccordion from '../Icons/AccordionIcons/DownArrowAccordion';
 
 const Accordion = ({ title, icon, description }) => {
 	const [isOpen, setIsOpen] = useState(false);
+	const handleClick = (e) => {
+		e.stopPropagation();
+		setIsOpen(!isOpen);
+	};
 
 	return (
-		<div className='border-b-[0.062rem] border-black w-[26.61rem]'>
-			<button className='flex flex-row items-center justify-between w-full h-14' onClick={() => setIsOpen(!isOpen)}>
+		<div className='border-b-[0.062rem] border-black'>
+			<button className='flex flex-row items-center justify-between w-full h-14' onClick={handleClick}>
 				<div className='flex gap-2'>
 					{icon}
 					<span className='text-lg font-medium'>{title}</span>

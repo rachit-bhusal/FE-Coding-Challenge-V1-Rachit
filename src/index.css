@@ -16,6 +16,7 @@ body {
 	display: flex;
 	justify-content: center;
 	background-color: #f7f7f7;
+	width: 100%;
 }
 
 @media screen and (min-width: 1030px) {

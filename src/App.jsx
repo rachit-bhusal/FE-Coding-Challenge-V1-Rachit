@@ -7,7 +7,7 @@ import TabContentWrapper from './components/Wrappers/TabContentWrapper';
 function App() {
 	const [activeTab, setActiveTab] = useState('tab1');
 	return (
-		<section className='max-w-[108rem] flex flex-col items-center m-4 pt-32 px-12'>
+		<section className='lg:max-w-[108rem] flex flex-col items-center m-4 pt-32 px-12'>
 			<h1 className='font-semibold text-[1.75rem] lg:text-[2.5rem] pb-2'>Section Title</h1>
 			<h2 className='text-lg font-medium lg:text-2xl'>Section Subtitle</h2>
 			<div className='flex flex-col gap-[0.812rem] mt-[1.9rem] lg:flex-row'>
