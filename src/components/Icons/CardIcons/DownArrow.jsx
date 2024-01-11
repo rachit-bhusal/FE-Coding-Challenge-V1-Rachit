@@ -1,6 +1,6 @@
 const DownArrow = () => {
 	return (
-		<svg xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16' fill='none'>
+		<svg className='shrink-0' xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16' fill='none'>
 			<path
 				d='M6.46045 2.35327C6.46045 3.23581 6.46045 12.5689 6.46045 13.4514'
 				stroke='black'

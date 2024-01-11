@@ -11,7 +11,7 @@ const TabCard = ({ title, description }) => {
 		setShowMyModal(false);
 	};
 	return (
-		<div className='sm:flex sm:flex-row lg:justify-between lg:gap-16 bg-[#FFE58C] rounded-[2.5rem] px-16 py-14 lg:w-full hidden'>
+		<div className='lg:flex lg:flex-row lg:justify-between lg:gap-16 bg-[#FFE58C] lg:rounded-[2.5rem] rounded-3xl px-16 py-14 lg:w-full'>
 			<div>
 				<p className='pb-6 text-5xl font-semibold xl:text-balance text-wrap'>{title}</p>
 				<p className='pb-12 text-2xl font-normal text-wrap'>{description}</p>

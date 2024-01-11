@@ -1,6 +1,6 @@
 const SecondCardIcon = () => {
 	return (
-		<svg xmlns='http://www.w3.org/2000/svg' width='49' height='49' viewBox='0 0 49 49' fill='none'>
+		<svg className='shrink-0' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'>
 			<circle cx='30.5887' cy='29.0543' r='16.8182' fill='#3C479D' />
 			<circle cx='15.7894' cy='15.6004' r='14.1273' fill='#FFD540' />
 			<path

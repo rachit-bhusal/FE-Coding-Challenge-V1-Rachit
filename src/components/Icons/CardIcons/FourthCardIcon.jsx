@@ -1,6 +1,6 @@
 const FourthCardIcon = () => {
 	return (
-		<svg xmlns='http://www.w3.org/2000/svg' width='49' height='49' viewBox='0 0 49 49' fill='none'>
+		<svg className='shrink-0' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'>
 			<path d='M8.74707 29.2061L24.5598 18.5237L41.0313 28.5472L24.5598 44.4081L8.74707 29.2061Z' fill='#9F7FEB' />
 			<circle cx='32.8497' cy='16.9483' r='14.2765' fill='#3C479D' />
 			<circle cx='15.9776' cy='16.9483' r='14.2765' fill='#9F7FEB' />

@@ -1,6 +1,6 @@
 const ThirdCardIcon = () => {
 	return (
-		<svg xmlns='http://www.w3.org/2000/svg' width='49' height='49' viewBox='0 0 49 49' fill='none'>
+		<svg className='shrink-0' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'>
 			<rect x='5.29883' y='2.67188' width='18' height='43.2' rx='4' fill='#F15A29' />
 			<rect x='12.5' y='19.4729' width='18' height='26.4' rx='4' fill='#3C479D' />
 			<path

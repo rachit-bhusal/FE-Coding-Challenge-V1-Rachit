@@ -1,6 +1,6 @@
 const FirstCardIcon = () => {
 	return (
-		<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'>
+		<svg className='shrink-0' xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'>
 			<rect x='4.09491' y='2.67261' width='27.6' height='34.8' rx='4' fill='#FFD540' />
 			<rect x='18.4949' y='19.4727' width='25.2' height='26.4' rx='4' fill='#FFE58C' />
 			<path
