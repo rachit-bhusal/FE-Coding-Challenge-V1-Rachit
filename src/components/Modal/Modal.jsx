@@ -6,10 +6,9 @@ const Modal = ({ visible, onClose }) => {
 	if (!visible) return null;
 
 	return (
-		<div id='container' className='fixed inset-0 z-40 flex items-center justify-center backdrop-blur-sm'>
+		<div onClick={handleOnClose} id='container' className='fixed inset-0 z-40 flex items-center justify-center backdrop-blur-sm'>
 			<div
 				id='bubble'
-				onClick={handleOnClose}
 				className='flex p-12 border rounded-lg border-[#CCCCCC] bg-white text-black  overflow-hidden justify-center items-center hover:shadow-md transition ease-in delay-150'>
 				<p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				<button

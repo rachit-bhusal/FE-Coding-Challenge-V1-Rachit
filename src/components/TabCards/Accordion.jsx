@@ -5,9 +5,9 @@ const Accordion = ({ title, icon, description }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div className='border-b-[0.062rem] border-black w-[26.61rem]'>
+		<div className='border-b-[0.062rem] border-black xl:w-[26.61rem] w-4/5'>
 			<button className='flex flex-row items-center justify-between w-full h-14' onClick={() => setIsOpen(!isOpen)}>
-				<div className='flex gap-2 p-3'>
+				<div className='flex gap-2'>
 					{icon}
 					<span className='text-lg font-medium'>{title}</span>
 				</div>

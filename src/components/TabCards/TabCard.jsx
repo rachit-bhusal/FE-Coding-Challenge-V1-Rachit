@@ -11,10 +11,10 @@ const TabCard = ({ title, description }) => {
 		setShowMyModal(false);
 	};
 	return (
-		<div className='flex flex-row justify-between gap-16 bg-[#FFE58C] rounded-[2.5rem] px-16 py-14 w-full'>
+		<div className='sm:flex sm:flex-row lg:justify-between lg:gap-16 bg-[#FFE58C] rounded-[2.5rem] px-16 py-14 lg:w-full hidden'>
 			<div>
-				<p className='pb-6 text-5xl font-semibold'>{title}</p>
-				<p className='pb-12 text-2xl font-normal'>{description}</p>
+				<p className='pb-6 text-5xl font-semibold xl:text-balance text-wrap'>{title}</p>
+				<p className='pb-12 text-2xl font-normal text-wrap'>{description}</p>
 				<TabButton label='Discover Product' setShowMyModal={setShowMyModal} />
 				<Modal onClose={dontShowMyModal} visible={showMyModal} />
 			</div>
