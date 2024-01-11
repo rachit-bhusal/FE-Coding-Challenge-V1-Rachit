@@ -1,21 +1,29 @@
+import { useState } from 'react';
 import TabCard from '../TabCards/TabCard';
 import TabContentWrapper from '../Wrappers/TabContentWrapper';
 import CardButton from './CardButton';
 
 const Card = ({ title, icon, description, buttonLabel, id, setActiveTab, activeTab }) => {
+	const [accordionIsOpen, setAccordionIsOpen] = useState(false);
+
 	const handleClick = () => {
 		setActiveTab(id);
+		setAccordionIsOpen(!accordionIsOpen);
 	};
 
 	return (
 		<div
 			onClick={handleClick}
-			className={`flex flex-col lg:border rounded-lg border-[#CCCCCC] bg-white text-black overflow-hidden justify-between lg:hover:shadow-md transition ease-in delay-150 lg:w-1/4 shadow-[0px_6px_0px_#FFD540] lg:shadow-none ${
-				activeTab === id ? `shadow-none rounded-[2.5rem] lg:rounded-lg` : ``
+			className={`flex flex-col cursor-pointer lg:border rounded-lg border-[#CCCCCC] bg-white text-black overflow-hidden justify-between lg:hover:shadow-md transition ease-in delay-150 w-full lg:w-1/4 shadow-[0px_6px_0px_#FFD540] lg:shadow-none ${
+				accordionIsOpen ? `shadow-none rounded-[2.5rem] lg:rounded-lg  max-w-[50rem]` : ``
 			}`}>
 			<div className='lg:p-6 px-8 py-6 pb-[0.625rem]'>
 				<div className='flex flex-row-reverse items-center justify-end gap-6 pb-4 lg:justify-between lg:flex-row lg:items-start'>
-					<div className='lg:hidden text-[#3C479D]'>+</div>
+					{accordionIsOpen ? (
+						<span className='lg:hidden text-[#3C479D]'>-</span>
+					) : (
+						<span className='lg:hidden text-[#3C479D]'>+</span>
+					)}
 					<p className='flex-grow text-xl font-semibold'>{title}</p>
 					{icon}
 				</div>
@@ -24,12 +32,13 @@ const Card = ({ title, icon, description, buttonLabel, id, setActiveTab, activeT
 			<div className='hidden lg:block'>
 				<CardButton label={buttonLabel} />
 			</div>
-
-			<div className='visible transition delay-200 lg:hidden ease'>
-				<TabContentWrapper key={id} id={id} activeTab={activeTab}>
-					<TabCard title={title} description={description} />
-				</TabContentWrapper>
-			</div>
+			{accordionIsOpen && (
+				<div className='visible transition delay-200 lg:hidden ease'>
+					<TabContentWrapper key={id} id={id} activeTab={activeTab}>
+						<TabCard title={title} description={description} />
+					</TabContentWrapper>
+				</div>
+			)}
 		</div>
 	);
 };

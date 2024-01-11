@@ -18,7 +18,6 @@ const TabCard = ({ title, description }) => {
 				<TabButton label='Discover Product' setShowMyModal={setShowMyModal} />
 				<Modal onClose={dontShowMyModal} visible={showMyModal} />
 			</div>
-
 			<div>
 				{accordionData.map((item) => {
 					return <Accordion key={item.id} title={item.title} icon={item.icon} description={item.description} />;
