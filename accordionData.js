@@ -31,7 +31,7 @@ const accordionData = [
 	},
 	{
 		id: '5',
-		title: 'Accordion title 4',
+		title: 'Accordion title 5',
 		icon: FifthAccordionIcon(),
 		description: 'Lorem ipsum dolor sit amet',
 	},

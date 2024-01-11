@@ -9,7 +9,7 @@ const Accordion = ({ title, icon, description }) => {
 			<button className='flex flex-row items-center justify-between w-full h-14' onClick={() => setIsOpen(!isOpen)}>
 				<div className='flex gap-2 p-3'>
 					{icon}
-					<span>{title}</span>
+					<span className='text-lg font-medium'>{title}</span>
 				</div>
 				<DownArrowAccordion accordionIsOpen={isOpen} />
 			</button>
