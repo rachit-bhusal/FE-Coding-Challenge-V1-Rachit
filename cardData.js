@@ -8,7 +8,7 @@ const cardData = [
 		id: 'tab1',
 		title: 'Card Title',
 		icon: FirstCardIcon(),
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit.',
 		button: {
 			title: 'Discover',
 		},
@@ -22,7 +22,7 @@ const cardData = [
 		id: 'tab2',
 		title: 'Card title that goes 2 lines',
 		icon: SecondCardIcon(),
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit.',
 		button: {
 			title: 'Discover',
 		},
@@ -37,7 +37,7 @@ const cardData = [
 
 		title: 'Card Title',
 		icon: ThirdCardIcon(),
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit.',
 		button: {
 			title: 'Discover',
 		},
@@ -52,7 +52,7 @@ const cardData = [
 
 		title: 'Card title that goes 2 lines',
 		icon: FourthCardIcon(),
-		description: 'Lorem ipsum dolor sit amet',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque risus id ante maximus blandit.',
 		button: {
 			title: 'Discover',
 		},
